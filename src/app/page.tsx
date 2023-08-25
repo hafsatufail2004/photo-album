@@ -11,7 +11,7 @@ public_id:string;
 }
 
 export default function Home() {
-const [imageID,setImageID] = useState("m7wo9hbrqqhqzowhjkdr");
+const [imageID,setImageID] = useState("");
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
  
@@ -23,7 +23,7 @@ setImageID(result.info.public_id);
 
 {imageID && (
  <CldImage
-  width="400"
+  width="500"
   height="300"
   src= {imageID}
   sizes="100vw"
